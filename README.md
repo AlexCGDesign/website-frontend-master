@@ -1,4 +1,4 @@
-# Frontend Mentor - Blogr landing page
+# Frontend Mentor - Diseñando una página web en vivo
 
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
