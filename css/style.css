@@ -24,11 +24,14 @@
     --color-v-blue: hsl(208, 49%, 24%);
     --color-v-d-grayish-blue :hsl(207, 13%, 34%);
     --color-v-d-black-blue:hsl(240, 10%, 16%);
-    
 }
 
 body{
     font-family: var(--font1);
+}
+
+.none{
+    display: none;
 }
 
 .hero{
@@ -126,6 +129,11 @@ body{
     background-image: url(../images/illustration-editor-mobile.svg);
 }
 
+.designed__illustration--right{
+    background-size: cover;
+    background-image: url(../images/illustration-laptop-mobile.svg);
+}
+
 .designed__paragraph{
     color: var(--color-v-d-grayish-blue);
     line-height: 1.5;
@@ -137,6 +145,12 @@ body{
 
 .designed__about--margin{
     margin-bottom: 40px;
+}
+
+.designed__subtitle{
+    font-size: 1.9rem;
+    color: var(--color-v-blue);
+    text-align: center;
 }
 
 /* -------------------- */
@@ -176,4 +190,223 @@ body{
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+/* ----------------------- */
+
+.footer{
+    background: var(--color-v-d-black-blue);
+    text-align: center;
+    font-family: var(--font2);
+    border-radius: 0 90px 0 0;
+}
+
+.footer__logo{
+    margin-bottom: 60px;
+}
+
+.footer__links{
+    margin-top: 60px;
+}
+
+.footer__links:nth-of-type(1){
+    margin-top: 0;
+}
+
+.footer__link{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: var(--color-grayish-blue);
+}
+
+.footer__link--main{
+    color: #fff;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 550px){
+    .none{
+        display: block;
+    }
+
+   
+
+    .nav{
+        font-family: var(--font2);
+    }
+
+    .nav__logo{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 40px;
+    }
+
+    .nav__menu{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav__link{
+        list-style: none;
+        color: #fff;
+    }
+
+    .nav__link::after{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 16px;
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/icon-arrow-light.svg);
+    }
+
+    .nav__hamburguer{
+        display: none;
+    }
+
+    .nav__buttons{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 20px;
+    }
+
+    .nav__button{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+
+    .nav__button--bold{
+        background: #fff;
+        color: var(--color-l-red);
+        padding-right: 30px;
+        padding-left: 30px;
+        border-radius: 30px;
+    }
+
+    .hero__title{
+        font-size: 4rem;
+    }
+
+    /* ---------------------- */
+
+    .subtitle{
+        font-size: 2.5rem;   
+    }
+
+    .designed{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .designed__illustration{
+        position: absolute;
+        left: 58%;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-size: contain;
+    }
+
+    .designed__container{
+        padding:100px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .designed__illustration{
+        width: 50%;
+    }
+
+    
+    .designed__texts{
+        width: 45%;
+    }
+
+
+    .designed__subtitle{
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+
+    .designed__paragraph{
+        text-align: left;
+    }
+
+    /* ----------------------- */
+
+    .infrastructure__container{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .infrastructure::before{
+        top: 20%;
+        bottom: 25%;
+       
+    }
+
+    .infrastructure__texts{
+        text-align: left;
+    }
+
+    .infrastructure__paragraph{
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+
+    /* -------------------------------- */
+
+    .designed--left{
+        /* --padding-container:0 0 80px ; */
+    }
+
+    .designed__illustration--right{
+        position: absolute;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        background-size: contain;
+        width: 70%;
+        left: -20%;
+        right: 0;
+        /* background-color: #000; */
+        background-position:left center;
+    }
+
+    .designed__container--left{
+        flex-direction: row-reverse;
+    }
+
+
+    /* ------------------ */
+
+    .footer__container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: space-between;
+        justify-items: center;
+        
+    }
+
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+    }
 }
